@@ -21,12 +21,7 @@ async def start_session(session_num: int):
     print(f"[SESSION {session_num}] Starting...")
     
     # Cara paling stabil untuk Ultroid terbaru
-    cmd = [
-        sys.executable, "-m", "pyUltroid",
-        "--id", api_id,
-        "--hash", api_hash,
-        "-s", session_string
-    ]
+    cmd = [sys.executable, "-m", "pyUltroid", session_string]
     
     # Kalau Ultroid kamu hanya nerima session string saja (cukup 1 env SESSION1, SESSION2, dst)
     # gunakan cara ini aja:
